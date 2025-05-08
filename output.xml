@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T20:09:05.405899" rpa="false" schemaversion="5">
+<suite id="s1" name="Site" source="c:\Users\lucas\Desktop\TesteRobot\site.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="38">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-08T20:09:05.576407" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<arg>https://automationpratice.com.br/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T20:09:05.576146" elapsed="1.804757"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:05.575424" elapsed="1.805850"/>
+</kw>
+<kw name="Aguardar site Carregar">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-08T20:09:12.382331" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-08T20:09:07.382043" elapsed="5.000600"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:07.381707" elapsed="5.001105"/>
+</kw>
+<kw name="Clicar Botão Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T20:09:12.384086" level="INFO">Clicking element '//a[@href="/login"]'.</msg>
+<arg>//a[@href="/login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T20:09:12.383665" elapsed="0.051050"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:12.383240" elapsed="0.051684"/>
+</kw>
+<kw name="Aguardar site Carregar">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-08T20:09:17.436683" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-08T20:09:12.435640" elapsed="5.001296"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:12.435323" elapsed="5.001747"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T20:09:17.437987" level="INFO">Typing text 'luquinhass@gmail.com' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>luquinhass@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T20:09:17.437778" elapsed="0.068113"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:17.437474" elapsed="0.068642"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-08T20:09:17.507224" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-08T20:09:17.526152" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T20:09:17.506970" elapsed="0.043555"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:17.506607" elapsed="0.044157"/>
+</kw>
+<kw name="Botão de Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-08T20:09:17.551968" level="INFO">Clicking button '//*[@id="btnLogin"]'.</msg>
+<arg>//*[@id="btnLogin"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T20:09:17.551724" elapsed="0.060522"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:17.551319" elapsed="0.061143"/>
+</kw>
+<kw name="Mensagem de Validação">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h2[contains(.,"Login realizado")]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T20:09:17.613386" elapsed="0.017289"/>
+</kw>
+<status status="PASS" start="2025-05-08T20:09:17.612929" elapsed="0.017995"/>
+</kw>
+<tag>teste</tag>
+<status status="PASS" start="2025-05-08T20:09:05.572578" elapsed="12.058819"/>
+</test>
+<status status="PASS" start="2025-05-08T20:09:05.409700" elapsed="12.222957"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">teste</stat>
+</tag>
+<suite>
+<stat name="Site" id="s1" pass="1" fail="0" skip="0">Site</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
