@@ -1,21 +1,20 @@
-# Automation - Robot Framework com Browser Library
+<h1 align="center">Automation - Robot Framework Num site Web</h1>
 
-Este repositório contém testes automatizados utilizando **Robot Framework** com a **Browser Library**.
+Este repositório contém testes automatizados utilizando **Robot Framework**
 
 ## 🚀 Tecnologias Utilizadas
 
 - **Robot Framework**
 - **Browser Library**
 - **Python**
+- VSCode
 
 ## 📌 Requisitos
 
 Certifique-se de ter instalado os seguintes requisitos:
 
-- **Python 3.8+**
-- **Node.js** (necessário para a Browser Library)
-- **npm** (vem junto com o Node.js)
-- **pip**
+- **Python**
+- ** Extensão Robot Framework Language Server (VsCode**
 
 ## 🔧 Instalação
 
