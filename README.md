@@ -1,13 +1,24 @@
-<h1 align="center">Automation - Robot Framework Num site Web</h1>
+<h1 align="center">Automação com Robot Framework</h1>
 
 Este repositório contém testes automatizados utilizando **Robot Framework**
 
-## 🚀 Tecnologias Utilizadas
+<p align="center">
+  <a href="#dart-descrição">Descrição</a> &#xa0; | &#xa0; 
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-dicas">Dicas</a> &#xa0; | &#xa0;
+</p>
 
-- **Robot Framework**
-- **Browser Library**
+## :dart: Descrição
+
+Esse Projeto tem como intuito conhecer e aperfeicoar a ferramenta Robot Framework com metodos para Testes automotizados
+
+## :rocket: Tecnologias
+
+Tecnologias e Linguagens usados nesse projeto:
+
 - **Python**
-- VSCode
+- **VSCode**
+- **Robot Framework**
 
 ## 📌 Requisitos
 
