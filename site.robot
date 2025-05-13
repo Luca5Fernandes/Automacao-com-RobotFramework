@@ -1,14 +1,15 @@
 ** Settings **
-
-Library  SeleniumLibrary
-
+Library  SeleniumLibrary   
+Library  BuiltIn
 ** Variables **
+${SITE_URL}  https://automationpratice.com.br/
+${USUARIO_EMAIL}  luquinhass@gmail.com
+${USUARIO_SENHA}  123456
 
 ** Keywords **
 
 Abrir Site
-
-    Open Browser  https://automationpratice.com.br/  chrome
+    Open Browser  ${SITE_URL}  chrome
 
 Aguardar site Carregar
     Sleep  5s
@@ -18,12 +19,10 @@ Clicar Botão Login
     Click Element   //a[@href="/login"]
 
 Digitar email 
-
-    Input Text    id:user    luquinhass@gmail.com
+    Input Text    id:user    ${USUARIO_EMAIL}
 
 Digitar senha
-
-    Input Password    id:password    123456
+    Input Password    id:password    ${USUARIO_SENHA}
 
 Botão de Login
 
@@ -36,6 +35,17 @@ Mensagem de Validação
 ** Test Cases **
 
 Cenário 1: Acessando o site do Robot
+    [Tags]    teste
+    Abrir Site
+    Aguardar site Carregar
+    Clicar Botão Login
+    Aguardar site Carregar
+    Digitar email
+    Digitar senha
+    Botão de Login
+    Mensagem de Validação
+
+Cenário 2: Testando Robot
     [Tags]    teste
     Abrir Site
     Aguardar site Carregar

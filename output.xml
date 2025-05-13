@@ -1,99 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T20:09:05.405899" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-12T21:04:17.417064" rpa="false" schemaversion="5">
 <suite id="s1" name="Site" source="c:\Users\lucas\Desktop\TesteRobot\site.robot">
-<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="38">
+<test id="s1-t1" name="Cenário 2: Testando Robot" line="48">
 <kw name="Abrir Site">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-08T20:09:05.576407" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
-<arg>https://automationpratice.com.br/</arg>
+<msg time="2025-05-12T21:04:17.586435" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<arg>${SITE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-08T20:09:05.576146" elapsed="1.804757"/>
+<status status="PASS" start="2025-05-12T21:04:17.586168" elapsed="1.947340"/>
 </kw>
-<status status="PASS" start="2025-05-08T20:09:05.575424" elapsed="1.805850"/>
+<status status="PASS" start="2025-05-12T21:04:17.585486" elapsed="1.948302"/>
 </kw>
 <kw name="Aguardar site Carregar">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-08T20:09:12.382331" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-12T21:04:24.535009" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-08T20:09:07.382043" elapsed="5.000600"/>
+<status status="PASS" start="2025-05-12T21:04:19.534535" elapsed="5.000838"/>
 </kw>
-<status status="PASS" start="2025-05-08T20:09:07.381707" elapsed="5.001105"/>
+<status status="PASS" start="2025-05-12T21:04:19.534214" elapsed="5.001315"/>
 </kw>
 <kw name="Clicar Botão Login">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T20:09:12.384086" level="INFO">Clicking element '//a[@href="/login"]'.</msg>
+<msg time="2025-05-12T21:04:24.536973" level="INFO">Clicking element '//a[@href="/login"]'.</msg>
+<msg time="2025-05-12T21:04:24.573839" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78DCC]
+	(No symbol) [0x00007FF67AFBF54F]
+	(No symbol) [0x00007FF67AFF7242]
+	(No symbol) [0x00007FF67AFF1C63]
+	(No symbol) [0x00007FF67AFF0D29]
+	(No symbol) [0x00007FF67AF45A55]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	(No symbol) [0x00007FF67AF44AC8]
+	GetHandleVerifier [0x00007FF67B596FA8+4180040]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</msg>
+<msg time="2025-05-12T21:04:24.575266" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78F9A]
+	(No symbol) [0x00007FF67AF64E35]
+	(No symbol) [0x00007FF67AF89DB4]
+	(No symbol) [0x00007FF67AFFEE75]
+	(No symbol) [0x00007FF67B01ECC2]
+	(No symbol) [0x00007FF67AFF7153]
+	(No symbol) [0x00007FF67AFC0421]
+	(No symbol) [0x00007FF67AFC11B3]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	GetHandleVerifier [0x00007FF67B1B5274+109332]
+	GetHandleVerifier [0x00007FF67B1B5422+109762]
+	GetHandleVerifier [0x00007FF67B19BA39+4825]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</msg>
 <arg>//a[@href="/login"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T20:09:12.383665" elapsed="0.051050"/>
+<status status="FAIL" start="2025-05-12T21:04:24.536597" elapsed="0.073805">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78F9A]
+	(No symbol) [0x00007FF67AF64E35]
+	(No symbol) [0x00007FF67AF89DB4]
+	(No symbol) [0x00007FF67AFFEE75]
+	(No symbol) [0x00007FF67B01ECC2]
+	(No symbol) [0x00007FF67AFF7153]
+	(No symbol) [0x00007FF67AFC0421]
+	(No symbol) [0x00007FF67AFC11B3]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	GetHandleVerifier [0x00007FF67B1B5274+109332]
+	GetHandleVerifier [0x00007FF67B1B5422+109762]
+	GetHandleVerifier [0x00007FF67B19BA39+4825]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</status>
 </kw>
-<status status="PASS" start="2025-05-08T20:09:12.383240" elapsed="0.051684"/>
+<status status="FAIL" start="2025-05-12T21:04:24.536241" elapsed="0.074463">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78F9A]
+	(No symbol) [0x00007FF67AF64E35]
+	(No symbol) [0x00007FF67AF89DB4]
+	(No symbol) [0x00007FF67AFFEE75]
+	(No symbol) [0x00007FF67B01ECC2]
+	(No symbol) [0x00007FF67AFF7153]
+	(No symbol) [0x00007FF67AFC0421]
+	(No symbol) [0x00007FF67AFC11B3]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	GetHandleVerifier [0x00007FF67B1B5274+109332]
+	GetHandleVerifier [0x00007FF67B1B5422+109762]
+	GetHandleVerifier [0x00007FF67B19BA39+4825]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</status>
 </kw>
 <kw name="Aguardar site Carregar">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-08T20:09:17.436683" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-08T20:09:12.435640" elapsed="5.001296"/>
-</kw>
-<status status="PASS" start="2025-05-08T20:09:12.435323" elapsed="5.001747"/>
+<status status="NOT RUN" start="2025-05-12T21:04:24.611128" elapsed="0.000090"/>
 </kw>
 <kw name="Digitar email">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T20:09:17.437987" level="INFO">Typing text 'luquinhass@gmail.com' into text field 'id:user'.</msg>
-<arg>id:user</arg>
-<arg>luquinhass@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T20:09:17.437778" elapsed="0.068113"/>
-</kw>
-<status status="PASS" start="2025-05-08T20:09:17.437474" elapsed="0.068642"/>
+<status status="NOT RUN" start="2025-05-12T21:04:24.611474" elapsed="0.000076"/>
 </kw>
 <kw name="Digitar senha">
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-08T20:09:17.507224" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-08T20:09:17.526152" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>id:password</arg>
-<arg>123456</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T20:09:17.506970" elapsed="0.043555"/>
-</kw>
-<status status="PASS" start="2025-05-08T20:09:17.506607" elapsed="0.044157"/>
+<status status="NOT RUN" start="2025-05-12T21:04:24.611774" elapsed="0.000072"/>
 </kw>
 <kw name="Botão de Login">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-08T20:09:17.551968" level="INFO">Clicking button '//*[@id="btnLogin"]'.</msg>
-<arg>//*[@id="btnLogin"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T20:09:17.551724" elapsed="0.060522"/>
-</kw>
-<status status="PASS" start="2025-05-08T20:09:17.551319" elapsed="0.061143"/>
+<status status="NOT RUN" start="2025-05-12T21:04:24.612071" elapsed="0.000077"/>
 </kw>
 <kw name="Mensagem de Validação">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//h2[contains(.,"Login realizado")]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-08T20:09:17.613386" elapsed="0.017289"/>
-</kw>
-<status status="PASS" start="2025-05-08T20:09:17.612929" elapsed="0.017995"/>
+<status status="NOT RUN" start="2025-05-12T21:04:24.612395" elapsed="0.000080"/>
 </kw>
 <tag>teste</tag>
-<status status="PASS" start="2025-05-08T20:09:05.572578" elapsed="12.058819"/>
+<status status="FAIL" start="2025-05-12T21:04:17.582676" elapsed="7.030090">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78F9A]
+	(No symbol) [0x00007FF67AF64E35]
+	(No symbol) [0x00007FF67AF89DB4]
+	(No symbol) [0x00007FF67AFFEE75]
+	(No symbol) [0x00007FF67B01ECC2]
+	(No symbol) [0x00007FF67AFF7153]
+	(No symbol) [0x00007FF67AFC0421]
+	(No symbol) [0x00007FF67AFC11B3]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	GetHandleVerifier [0x00007FF67B1B5274+109332]
+	GetHandleVerifier [0x00007FF67B1B5422+109762]
+	GetHandleVerifier [0x00007FF67B19BA39+4825]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</status>
 </test>
-<status status="PASS" start="2025-05-08T20:09:05.409700" elapsed="12.222957"/>
+<status status="FAIL" start="2025-05-12T21:04:17.421069" elapsed="7.193239"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">teste</stat>
+<stat pass="0" fail="1" skip="0">teste</stat>
 </tag>
 <suite>
-<stat name="Site" id="s1" pass="1" fail="0" skip="0">Site</stat>
+<stat name="Site" id="s1" pass="0" fail="1" skip="0">Site</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-05-12T21:04:24.573839" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF67B1ACF25+75717]
+	GetHandleVerifier [0x00007FF67B1ACF80+75808]
+	(No symbol) [0x00007FF67AF78DCC]
+	(No symbol) [0x00007FF67AFBF54F]
+	(No symbol) [0x00007FF67AFF7242]
+	(No symbol) [0x00007FF67AFF1C63]
+	(No symbol) [0x00007FF67AFF0D29]
+	(No symbol) [0x00007FF67AF45A55]
+	GetHandleVerifier [0x00007FF67B4AD6FD+3223453]
+	GetHandleVerifier [0x00007FF67B4A7CA2+3200322]
+	GetHandleVerifier [0x00007FF67B4C5AD3+3322739]
+	GetHandleVerifier [0x00007FF67B1C69FA+180890]
+	GetHandleVerifier [0x00007FF67B1CE0FF+211359]
+	(No symbol) [0x00007FF67AF44AC8]
+	GetHandleVerifier [0x00007FF67B596FA8+4180040]
+	BaseThreadInitThunk [0x00007FFBA3E77374+20]
+	RtlUserThreadStart [0x00007FFBA403CC91+33]
+</msg>
 </errors>
 </robot>
