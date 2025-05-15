@@ -5,6 +5,7 @@ Library  BuiltIn
 ${SITE_URL}  https://automationpratice.com.br/
 ${USUARIO_EMAIL}  luquinhass@gmail.com
 ${USUARIO_SENHA}  123456
+${SITE_BOTAO}  //*[@id="btnLogin"] 
 
 ** Keywords **
 
@@ -26,7 +27,7 @@ Digitar senha
 
 Botão de Login
 
-    Click Button    //*[@id="btnLogin"] 
+    Click Button    ${SITE_BOTAO}
 
 Mensagem de Validação
 
@@ -44,17 +45,3 @@ Cenário 1: Acessando o site do Robot
     Digitar senha
     Botão de Login
     Mensagem de Validação
-
-Cenário 2: Testando Robot
-    [Tags]    teste
-    Abrir Site
-    Aguardar site Carregar
-    Clicar Botão Login
-    Aguardar site Carregar
-    Digitar email
-    Digitar senha
-    Botão de Login
-    Mensagem de Validação
-
-
-
