@@ -1,13 +1,5 @@
 <h1 align="center">Automação com Robot Framework</h1>
 
-Este repositório contém testes automatizados utilizando **Robot Framework**
-
-<p align="center">
-  <a href="#dart-descrição">Descrição</a> &#xa0; | &#xa0; 
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-dicas">Dicas</a> &#xa0; | &#xa0;
-</p>
-
 ## :dart: Descrição
 
 Esse Projeto tem como intuito conhecer e aperfeicoar a ferramenta Robot Framework com metodos para Testes automotizados
@@ -25,53 +17,66 @@ Tecnologias e Linguagens usados nesse projeto:
 Certifique-se de ter instalado os seguintes requisitos:
 
 - **Python**
-- ** Extensão Robot Framework Language Server (VsCode**
+- **Node.js**
+- **Extensão Robot Framework Language Server (VsCode)**
 
 ## 🔧 Instalação
 
-1. **Clone o repositório:**
+1. **Instalar Python**
+    https://www.python.org/downloads/
+
+2. **Abrir o VsCode (New Terminal) e verificar se o Python está Instalado**
    ```sh
-   git clone [https://github.com/lupajr/Automacao_robot.git](https://github.com/lupajr/Automacao_robot.git)
-   cd seu-repositorio
+   python --version
    ```
 
-2. **Crie um ambiente virtual e ative-o:**
-
+3. **Instale o Robot Framework via pip**
+   ```sh
+   pip install robotframework
+   ```
+   
+   **Crie um ambiente virtual e ative-o:**
    **No Windows:**
    ```sh
    python -m venv venv
    venv\Scripts\activate
    ```
 
-   **No macOS/Linux:**
+    **No macOS/Linux:**
    ```sh
    python -m venv venv
    source venv/bin/activate
    ```
 
-3. **Instale a Browser Library:**
-   ```sh
-   rfbrowser init
+4. **Instale a Extensão no VSCode (Robot Framework Language Server)**
+
+   **Instale bibliotecas adicionais** 
+     ```sh
+     pip install robotframework-seleniumlibrary
+     # ou
+     pip install robotframework-browser
+     ```
+
+5. **Verifique se está funcionando (Crie um arquivo .robot com o seguinte conteúdo)**
+    ```sh
+    *** Test Cases ***
+    Teste Simples
+    Log    Hello, Robot!
+    ```
+
+-----------------------------------------------------------------
+
+##  ▶️ Executando o Projeto
+```sh
+robot nome_do_arquivo.robot
    ```
 
-## ▶️ Executando os Testes
+7.**Clone o repositório no Git Bash ou no Terminal do VsCode**
+   ```sh
+   git clone https://github.com/Luca5Fernandes/Automacao-com-RobotFramework.git
+   ```
 
-Para executar todos os testes, utilize o seguinte comando:
-```sh
-robot --include teste testes.robot
-```
 
-Ou, para executar um teste específico:
-```sh
-robot --include teste testes.robot/seu_teste.robot
-```
 
-## 📜 Licença
-
-Este projeto está sob a licença **MIT** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
----
-
-Este projeto utiliza [https://github.com/ServeRest/ServeRest](https://github.com/ServeRest/ServeRest) como site para automação 
-
----
-✍️ Criado por [Luiz Paulo](https://github.com/lupajr)
+-----------------------------------------------------------------
+✍️ Criado por Lucas Fernandes https://github.com/Luca5Fernandes
